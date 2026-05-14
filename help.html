@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnLoop AI — Help Center</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body { background-color: var(--bg); color: var(--text-main); font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+    .page-content { padding: 120px 0 80px; min-height: 70vh; }
+    .page-title { font-family: 'Outfit', sans-serif; font-size: 3rem; margin-bottom: 2rem; color: #fff; text-align: center; }
+    .text-container { max-width: 800px; margin: 0 auto; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 3rem; backdrop-filter: blur(10px); }
+    .text-container h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; color: #E67E22; font-family: 'Outfit', sans-serif; }
+    .text-container h2:first-child { margin-top: 0; }
+    .text-container p { margin-bottom: 1.5rem; color: #a0aec0; line-height: 1.7; }
+    .text-container ul { margin-bottom: 1.5rem; color: #a0aec0; padding-left: 1.5rem; }
+    .text-container li { margin-bottom: 0.5rem; line-height: 1.7; }
+  </style>
+</head>
+<body>
+  <!-- Background -->
+  <div class="hero-bg" style="position: fixed; inset: 0; z-index: -1; pointer-events: none;">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="url(#g1)" stroke-width="2.5"/><path d="M10 20 L16 10 L22 20" stroke="url(#g1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="22" r="2" fill="url(#g1)"/><defs><linearGradient id="g1" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#E67E22"/><stop offset="1" stop-color="#F39C12"/></linearGradient></defs></svg>
+        </div>
+        <span class="logo-text">LearnLoop</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Back to Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <section class="page-content">
+    <div class="container">
+      <h1 class="page-title">Help <span class="gradient-text">Center</span></h1>
+      <div class="text-container">
+        <h2>Credits & Payments</h2>
+        <p><strong>What are the exact ways to earn Knowledge Credits?</strong><br>You can earn credits by teaching a session (+10-30), sharing a learning resource (+2), completing your profile (+5), or hitting your first teaching streak (+10).</p>
+        
+        <p><strong>How are credit costs calculated for a help request?</strong><br>The cost is auto-calculated based on the urgency of the request and the intended duration of the session; longer and more urgent requests require more credits.</p>
+
+        <p><strong>What happens if I run out of credits?</strong><br>If your balance is insufficient, the credit preview will turn red. You can earn more by teaching others or browsing existing requests that match your expertise.</p>
+
+        <h2>Tutors & Matching</h2>
+        <p><strong>How does the matching system decide which tutor is "Best"?</strong><br>The platform uses a scoring algorithm based on expertise match (40%), rating (25%), language (20%), availability (10%), and teaching style (5%).</p>
+
+        <p><strong>Can I see why a specific tutor was recommended to me?</strong><br>Yes, each recommended tutor card includes an AI-generated explanation detailing why they are a good match for your specific request.</p>
+
+        <p><strong>What if no tutors are available when I post a request?</strong><br>The app will notify you when someone becomes available, or you can choose to convert your request into a scheduled session for later.</p>
+
+        <h2>Live Sessions & Profile</h2>
+        <p><strong>What tools are available during a live session?</strong><br>You have access to a collaborative whiteboard with drawing tools (pen, shapes, etc.), a real-time chat, and the ability to upload resources like PDFs and images.</p>
+
+        <p><strong>Can I save a summary of my learning session?</strong><br>Yes, after a session ends, an AI-generated summary of the key topics covered is provided to both the learner and the tutor.</p>
+
+        <p><strong>How is my "Skill DNA" calculated on my profile?</strong><br>The radar chart is based on the subject expertise you declared during registration and updated using mastery scores earned from the sessions you have taught.</p>
+
+        <p><strong>What is a "Streak Freeze"?</strong><br>A Streak Freeze allows you to maintain your daily teaching activity record if you miss a day; you can earn one freeze per week.</p>
+
+        <h2>Contact Support</h2>
+        <p>If you need further assistance or have another query, please contact your institution's administrator or email our dedicated support team at <a href="mailto:support@learnloop.ai" style="color:var(--primary); font-weight: bold; text-decoration: none;">support@learnloop.ai</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 LearnLoop AI. Hackathon Master Blueprint.</p>
+        <p>Confidential — Hackathon Use Only</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

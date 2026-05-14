@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8" />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <title>LearnLoop AI — Where Knowledge Becomes Currency</title>
+ <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+ <meta name="description" content="LearnLoop is a peer-to-peer knowledge exchange ecosystem where students teach and learn, powered by a gamified Knowledge Credit economy." />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+ <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+ <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+
+ <!-- ===== NAVBAR ===== -->
+
+ <nav class="navbar" id="navbar">
+
+ <div class="container nav-content">
+
+ <a href="#" class="nav-logo">
+
+ <div class="logo-icon">
+
+ <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="url(#g1)" stroke-width="2.5"/><path d="M10 20 L16 10 L22 20" stroke="url(#g1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="22" r="2" fill="url(#g1)"/><defs><linearGradient id="g1" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#E67E22"/><stop offset="1" stop-color="#F39C12"/></linearGradient></defs></svg>
+
+ </div>
+
+ <span class="logo-text">LearnLoop</span>
+
+ </a>
+
+ <ul class="nav-links" id="navLinks">
+
+ <li><a href="#problems">Problems</a></li>
+
+ 
+
+ <li><a href="#info">About</a></li>
+
+ <li><a href="#workflow">How It Works</a></li>
+
+ <li><a href="#dashboards">Dashboards</a></li>
+
+ </ul>
+
+ <div class="nav-actions">
+
+ <button class="btn btn-ghost" id="loginBtn">Log In</button>
+
+ <button class="btn btn-primary" id="signupBtn">Get Started</button>
+
+ </div>
+
+ <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+
+ <span></span><span></span><span></span>
+
+ </button>
+
+ </div>
+
+ </nav>
+
+ <!-- ===== HERO ===== -->
+
+ <section class="hero" id="hero">
+
+ <div class="hero-bg">
+
+ <div class="hero-orb hero-orb-1"></div>
+
+ <div class="hero-orb hero-orb-2"></div>
+
+ <div class="hero-orb hero-orb-3"></div>
+
+ <div class="hero-grid"></div>
+
+ </div>
+
+ <div class="container hero-content">
+
+ <div class="hero-badge reveal">
+
+ <span class="badge-dot"></span>
+
+ Peer-to-Peer Knowledge Exchange Ecosystem
+
+ </div>
+
+ <h1 class="hero-title reveal">
+
+ Where Knowledge<br />Becomes <span class="gradient-text">Currency</span>
+
+ </h1>
+
+ <p class="hero-subtitle reveal">
+
+ A self-sustaining academic platform where students both teach and learn, powered by a gamified <strong>Knowledge Credit</strong> economy that turns passive consumers into active contributors.
+
+ </p>
+
+ <div class="hero-cta reveal">
+
+ <button class="btn btn-primary btn-lg" id="heroGetStarted">
+
+ Start Learning <i data-lucide="arrow-right"></i>
+
+ </button>
+
+ <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank" rel="noopener" class="btn btn-outline btn-lg" id="heroWatchDemo">
+
+ <i data-lucide="play-circle"></i> Watch Demo
+
+ </a>
+
+ </div>
+
+ <div class="hero-stats reveal">
+
+ <div class="stat">
+
+ <span class="stat-number" data-target="200">0</span><span class="stat-suffix">B+</span>
+
+ <span class="stat-label">Market Size</span>
+
+ </div>
+
+ <div class="stat-divider"></div>
+
+ <div class="stat">
+
+ <span class="stat-number" data-target="6">0</span>
+
+ <span class="stat-label">Problems Solved</span>
+
+ </div>
+
+ <div class="stat-divider"></div>
+
+ <div class="stat">
+
+ <span class="stat-number" data-target="7">0</span>
+
+ <span class="stat-label">AI Features</span>
+
+ </div>
+
+ <div class="stat-divider"></div>
+
+ <div class="stat">
+
+ <span class="stat-number" data-target="0">0</span><span class="stat-suffix">$</span>
+
+ <span class="stat-label">Cost to Students</span>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="hero-scroll-indicator">
+
+ <i data-lucide="chevrons-down"></i>
+
+ </div>
+
+ </section>
+
+ <!-- ===== PROBLEM STATEMENT ===== -->
+
+ <section class="section section-problem" id="problems">
+
+ <div class="container">
+
+ <div class="section-header reveal">
+
+ <span class="section-tag">The Problem</span>
+
+ <h2 class="section-title">Learning Is <span class="gradient-text">Broken</span></h2>
+
+ <p class="section-desc">Traditional tutoring is expensive, teacher-centric, and unavailable for quick, topic-specific doubts. Students who excel have no meaningful platform to share their expertise.</p>
+
+ </div>
+
+ <div class="problem-grid">
+
+ <div class="problem-card reveal" style="--delay: 0.1s">
+
+ <div class="problem-icon"><i data-lucide="dollar-sign"></i></div>
+
+ <h3>Affordability Barrier</h3>
+
+ <p>Platforms like Chegg or Wyzant charge money, excluding millions of students from quality help.</p>
+
+ </div>
+
+ <div class="problem-card reveal" style="--delay: 0.2s">
+
+ <div class="problem-icon"><i data-lucide="clock"></i></div>
+
+ <h3>Time Barrier</h3>
+
+ <p>Students need help at odd hours — 2 AM before an exam — not during business hours.</p>
+
+ </div>
+
+ <div class="problem-card reveal" style="--delay: 0.3s">
+
+ <div class="problem-icon"><i data-lucide="shield-off"></i></div>
+
+ <h3>Trust Barrier</h3>
+
+ <p>Students hesitate to ask teachers; peer interaction feels safer and more approachable.</p>
+
+ </div>
+
+ <div class="problem-card reveal" style="--delay: 0.4s">
+
+ <div class="problem-icon"><i data-lucide="zap-off"></i></div>
+
+ <h3>Incentive Gap</h3>
+
+ <p>Students who know subjects have no compelling reason to teach others — no reward structure.</p>
+
+ </div>
+
+ <div class="problem-card reveal" style="--delay: 0.5s">
+
+ <div class="problem-icon"><i data-lucide="message-circle-warning"></i></div>
+
+ <h3>Unstructured Learning</h3>
+
+ <p>WhatsApp groups and Discord servers are chaotic and unverified — no quality control.</p>
+
+ </div>
+
+ <div class="problem-card reveal" style="--delay: 0.6s">
+
+ <div class="problem-icon"><i data-lucide="brain-cog"></i></div>
+
+ <h3>Knowledge Wastage</h3>
+
+ <p>Every batch produces hundreds of subject experts whose knowledge evaporates after graduation.</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <!-- ===== INNOVATION ===== -->
+
+ <section class="section section-innovation" id="innovation">
+
+ <div class="container">
+
+ <div class="section-header reveal">
+
+ <span class="section-tag">Innovation</span>
+
+ <h2 class="section-title">What Makes Us <span class="gradient-text">Different</span></h2>
+
+ <p class="section-desc">Breakthrough features that no competitor has thought of yet.</p>
+
+ </div>
+
+ <div class="innovation-grid">
+
+ <div class="innovation-card innovation-card-lg reveal" style="--delay: 0.1s">
+
+ <div class="innovation-number">01</div>
+
+ <div class="innovation-icon"><i data-lucide="file-text"></i></div>
+
+ <h3>AI Session Summarizer</h3>
+
+ <p>Auto-generate session notes and send to both participants after each session — never lose a learning moment.</p>
+
+ </div>
+
+ <div class="innovation-card reveal" style="--delay: 0.15s">
+
+ <div class="innovation-number">02</div>
+
+ <div class="innovation-icon"><i data-lucide="git-branch"></i></div>
+
+ <h3>Concept Graph</h3>
+
+ <p>Visualize how topics connect across sessions — show students their complete learning trajectory.</p>
+
+ </div>
+
+ <div class="innovation-card reveal" style="--delay: 0.2s">
+
+ <div class="innovation-number">03</div>
+
+ <div class="innovation-icon"><i data-lucide="radar"></i></div>
+
+ <h3>Skill DNA Profile</h3>
+
+ <p>Radar chart of subject strengths built from session history — your academic fingerprint.</p>
+
+ </div>
+
+ <div class="innovation-card reveal" style="--delay: 0.25s">
+
+ <div class="innovation-number">04</div>
+
+ <div class="innovation-icon"><i data-lucide="trending-up"></i></div>
+
+ <h3>Smart Credit Pricing</h3>
+
+ <p>AI dynamically adjusts credit cost based on demand/supply for a topic — like surge pricing for knowledge.</p>
+
+ </div>
+
+ <div class="innovation-card reveal" style="--delay: 0.3s">
+
+ <div class="innovation-number">05</div>
+
+ <div class="innovation-icon"><i data-lucide="layers"></i></div>
+
+ <h3>Doubt Clustering</h3>
+
+ <p>Group similar doubts and serve one tutor to multiple students simultaneously — efficiency at scale.</p>
+
+ </div>
+
+ <div class="innovation-card innovation-card-lg reveal" style="--delay: 0.35s">
+
+ <div class="innovation-number">06</div>
+
+ <div class="innovation-icon"><i data-lucide="message-square-plus"></i></div>
+
+ <h3>AI Doubt Pre-Processor</h3>
+
+ <p>Before posting, AI reformulates vague questions into clear, answerable ones — raises question quality automatically.</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <!-- ===== AI FEATURES ===== -->
+
+ <section class="section section-ai" id="ai">
+
+ <div class="container">
+
+ <div class="section-header reveal">
+
+ <span class="section-tag">AI Engine</span>
+
+ <h2 class="section-title">Powered by <span class="gradient-text">Intelligence</span></h2>
+
+ <p class="section-desc">Seven AI systems working together to create the smartest learning platform ever built.</p>
+
+ </div>
+
+ <div class="ai-showcase">
+
+ <div class="ai-card reveal" style="--delay: 0.1s">
+
+ <div class="ai-card-glow"></div>
+
+ <div class="ai-icon"><i data-lucide="users"></i></div>
+
+ <h3>Tutor-Learner Matching</h3>
+
+ <p>NLP + collaborative filtering to match based on expertise, language, and past ratings.</p>
+
+ <div class="ai-tag">NLP Engine</div>
+
+ </div>
+
+ <div class="ai-card reveal" style="--delay: 0.15s">
+
+ <div class="ai-card-glow"></div>
+
+ <div class="ai-icon"><i data-lucide="bar-chart-3"></i></div>
+
+ <h3>Session Quality Scorer</h3>
+
+ <p>Analyze session transcript for engagement, depth, and helpfulness in real-time.</p>
+
+ <div class="ai-tag">Deep Learning</div>
+
+ </div>
+
+ <div class="ai-card reveal" style="--delay: 0.2s">
+
+ <div class="ai-card-glow"></div>
+
+ <div class="ai-icon"><i data-lucide="sparkles"></i></div>
+
+ <h3>Doubt Clarity Assistant</h3>
+
+ <p>LLM that reformulates student's doubt to make it searchable and clear.</p>
+
+ <div class="ai-tag">LLM</div>
+
+ </div>
+
+ <div class="ai-card reveal" style="--delay: 0.25s">
+
+ <div class="ai-card-glow"></div>
+
+ <div class="ai-icon"><i data-lucide="tags"></i></div>
+
+ <h3>Auto-Tagging</h3>
+
+ <p>NLP to auto-extract subject, topic, and difficulty from help requests.</p>
+
+ <div class="ai-tag">NLP</div>
+
+ </div>
+
+ <div class="ai-card reveal" style="--delay: 0.3s">
+
+ <div class="ai-card-glow"></div>
+
+ <div class="ai-icon"><i data-lucide="route"></i></div>
+
+ <h3>Learning Path AI</h3>
+
+ <p>Recommends which topics to tackle next based on your credit history and gaps.</p>
+
+ <div class="ai-tag">Recommendation</div>
+
+ </div>
+
+ <div class="ai-card reveal" style="--delay: 0.35s">
+
+ <div class="ai-card-glow"></div>
+
+ <div class="ai-icon"><i data-lucide="user-x"></i></div>
+
+ <h3>Churn Predictor</h3>
+
+ <p>Flag students who stop engaging and trigger re-engagement nudges automatically.</p>
+
+ <div class="ai-tag">Predictive</div>
+
+ </div>
+
+ <div class="ai-card reveal" style="--delay: 0.4s">
+
+ <div class="ai-card-glow"></div>
+
+ <div class="ai-icon"><i data-lucide="scan-eye"></i></div>
+
+ <h3>Fraud Detector</h3>
+
+ <p>Flag fake sessions or credit farming via anomaly detection algorithms.</p>
+
+ <div class="ai-tag">Anomaly Detection</div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <!-- ===== VISION / SCALABILITY ===== -->
+
+ <section class="section section-vision" id="vision">
+
+ <div class="container">
+
+ <div class="section-header reveal">
+
+ <span class="section-tag">Vision & Scale</span>
+
+ <h2 class="section-title">Built for <span class="gradient-text">Growth</span></h2>
+
+ <p class="section-desc">From a single campus to a global knowledge network — LearnLoop scales with network effects.</p>
+
+ </div>
+
+ <div class="vision-layout">
+
+ <div class="vision-scalability reveal">
+
+ <h3><i data-lucide="rocket"></i> Scalability Roadmap</h3>
+
+ <div class="roadmap">
+
+ <div class="roadmap-item">
+
+ <div class="roadmap-dot"></div>
+
+ <div class="roadmap-content">
+
+ <h4>Multi-Campus Expansion</h4>
+
+ <p>Each institution gets a branded LearnLoop subdomain</p>
+
+ </div>
+
+ </div>
+
+ <div class="roadmap-item">
+
+ <div class="roadmap-dot"></div>
+
+ <div class="roadmap-content">
+
+ <h4>Alumni Mentoring Tier</h4>
+
+ <p>Graduates mentor juniors, creating a career guidance layer</p>
+
+ </div>
+
+ </div>
+
+ <div class="roadmap-item">
+
+ <div class="roadmap-dot"></div>
+
+ <div class="roadmap-content">
+
+ <h4>API Marketplace</h4>
+
+ <p>Institutions pay for access to anonymized learning gap analytics</p>
+
+ </div>
+
+ </div>
+
+ <div class="roadmap-item">
+
+ <div class="roadmap-dot"></div>
+
+ <div class="roadmap-content">
+
+ <h4>B2B SaaS</h4>
+
+ <p>Sell to universities as a premium tutoring infrastructure tool</p>
+
+ </div>
+
+ </div>
+
+ <div class="roadmap-item">
+
+ <div class="roadmap-dot"></div>
+
+ <div class="roadmap-content">
+
+ <h4>Microservices</h4>
+
+ <p>Separate services for sessions, credits, matching, and notifications</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="vision-startup reveal" style="--delay: 0.2s">
+
+ <div class="startup-card">
+
+ <div class="startup-market">
+
+ <span class="market-value">$200B+</span>
+
+ <span class="market-label">Global Private Tutoring Market</span>
+
+ </div>
+
+ <p class="startup-desc">LearnLoop addresses this massive market with a zero-cost alternative that creates network effects. Once a campus reaches critical mass (50+ active tutors), the platform becomes self-sustaining.</p>
+
+ <h4>Revenue Paths</h4>
+
+ <ul class="revenue-list">
+
+ <li><i data-lucide="check-circle-2"></i> Premium subscriptions for power users</li>
+
+ <li><i data-lucide="check-circle-2"></i> Institutional licensing</li>
+
+ <li><i data-lucide="check-circle-2"></i> Anonymized data insights for EdTech</li>
+
+ <li><i data-lucide="check-circle-2"></i> Marketplace for verified study materials</li>
+
+ </ul>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <!-- ===== INFO SECTION ===== -->
+
+ <section class="section section-info" id="info">
+
+ <div class="container">
+
+ <div class="info-hero reveal">
+
+ <span class="section-tag">About LearnLoop</span>
+
+ <h2 class="section-title">Learn Tech , <span class="gradient-text">Grow together</span></h2>
+
+ <p class="info-tagline-sub">A peer-to-peer knowledge exchange platform where every student is both a learner and a teacher.</p>
+
+ <div class="info-cta-row">
+
+ <a href="#dashboards" class="btn btn-primary"><i data-lucide="layout-dashboard"></i> Explore Dashboards</a>
+
+ <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank" rel="noopener" class="btn btn-ghost btn-demo" id="watchDemoBtn"><i data-lucide="play-circle"></i> Watch Demo</a>
+
+ </div>
+
+ </div>
+
+ <div class="info-grid reveal" style="--delay:0.1s">
+
+ <div class="info-card">
+
+ <div class="info-card-icon info-icon-orange"><i data-lucide="lightbulb"></i></div>
+
+ <h3>What is LearnLoop?</h3>
+
+ <p>LearnLoop is an AI-powered platform that connects students who need help with peers who can teach — all powered by a cashless <strong>Knowledge Credit</strong> economy. No money, no barriers — just pure knowledge exchange.</p>
+
+ </div>
+
+ <div class="info-card">
+
+ <div class="info-card-icon info-icon-blue"><i data-lucide="repeat"></i></div>
+
+ <h3>How Credits Work</h3>
+
+ <p>Earn credits by teaching what you know. Spend them to learn what you don't. Every session transfers credits from learner to tutor — creating a self-sustaining economy where <strong>teaching is rewarded</strong> and learning is accessible.</p>
+
+ </div>
+
+ <div class="info-card">
+
+ <div class="info-card-icon info-icon-purple"><i data-lucide="cpu"></i></div>
+
+ <h3>AI-Powered Matching</h3>
+
+ <p>Our AI engine analyzes subject expertise, ratings, language, and learning style to find your <strong>perfect tutor match</strong> in seconds. GPT-powered doubt reformulation ensures your questions are clear and structured.</p>
+
+ </div>
+
+ <div class="info-card">
+
+ <div class="info-card-icon info-icon-green"><i data-lucide="monitor-play"></i></div>
+
+ <h3>Live Session Workspace</h3>
+
+ <p>A real-time collaborative workspace with <strong>whiteboard, chat, and video</strong>. Teach and learn together with drawing tools, file sharing, and an AI-generated session summary at the end.</p>
+
+ </div>
+
+ <div class="info-card">
+
+ <div class="info-card-icon info-icon-red"><i data-lucide="trophy"></i></div>
+
+ <h3>Gamification & Growth</h3>
+
+ <p>Earn badges, maintain teaching streaks, and climb the <strong>campus leaderboard</strong>. Every session builds your Skill DNA — a radar chart showing your expertise growth across subjects.</p>
+
+ </div>
+
+ <div class="info-card">
+
+ <div class="info-card-icon info-icon-orange"><i data-lucide="shield-check"></i></div>
+
+ <h3>Verified & Secure</h3>
+
+ <p>Only real, institution-verified students can join. <strong>Email OTP verification</strong>, content moderation, and AI-powered review analysis maintain a trusted and safe learning community.</p>
+
+ </div>
+
+ </div>
+
+ <div class="info-stats reveal" style="--delay:0.15s">
+
+ 
+
+ <div class="info-stat"><span class="info-stat-num">5</span><span class="info-stat-label">User Roles</span></div>
+
+ <div class="info-stat"><span class="info-stat-num">6+</span><span class="info-stat-label">AI Integrations</span></div>
+
+ <div class="info-stat"><span class="info-stat-num">∞</span><span class="info-stat-label">Knowledge Shared</span></div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <!-- ===== HOW IT WORKS (Section 2.6) ===== -->
+
+ <section class="section section-workflow" id="workflow">
+
+ <div class="container">
+
+ <div class="section-header reveal">
+
+ <span class="section-tag">How It Works</span>
+
+ <h2 class="section-title">Six Steps to <span class="gradient-text">Knowledge</span></h2>
+
+ <p class="section-desc">From signup to mastery — here's the complete LearnLoop journey.</p>
+
+ </div>
+
+ <div class="workflow-timeline">
+
+ <div class="workflow-step reveal" style="--delay: 0.1s">
+
+ <div class="step-number">1</div>
+
+ <div class="step-content">
+
+ <h3>Registration & Verification</h3>
+
+ <p>Sign up with institution email → OTP verification → create profile (expertise + interests) → receive <strong>20 starter credits</strong></p>
+
+ </div>
+
+ <div class="step-icon"><i data-lucide="user-plus"></i></div>
+
+ </div>
+
+ <div class="workflow-step reveal" style="--delay: 0.15s">
+
+ <div class="step-number">2</div>
+
+ <div class="step-content">
+
+ <h3>Post a Help Request</h3>
+
+ <p>Fill request form → AI auto-tags subject/topic → set urgency + language + duration → request goes live on feed</p>
+
+ </div>
+
+ <div class="step-icon"><i data-lucide="help-circle"></i></div>
+
+ </div>
+
+ <div class="workflow-step reveal" style="--delay: 0.2s">
+
+ <div class="step-number">3</div>
+
+ <div class="step-content">
+
+ <h3>AI Matching</h3>
+
+ <p>System scores all tutors using expertise, availability, rating, language, and history → top 3 recommended → accept or browse all</p>
+
+ </div>
+
+ <div class="step-icon"><i data-lucide="cpu"></i></div>
+
+ </div>
+
+ <div class="workflow-step reveal" style="--delay: 0.25s">
+
+ <div class="step-number">4</div>
+
+ <div class="step-content">
+
+ <h3>Session Execution</h3>
+
+ <p>Enter session room → real-time chat + collaborative whiteboard + optional video (WebRTC) → tutor shares notes → timer runs</p>
+
+ </div>
+
+ <div class="step-icon"><i data-lucide="monitor-play"></i></div>
+
+ </div>
+
+ <div class="workflow-step reveal" style="--delay: 0.3s">
+
+ <div class="step-number">5</div>
+
+ <div class="step-content">
+
+ <h3>Credit Transfer & Feedback</h3>
+
+ <p>Session ends → learner rates tutor (1-5 stars + text) → AI scores quality → credits transfer → badges & streaks update</p>
+
+ </div>
+
+ <div class="step-icon"><i data-lucide="arrow-left-right"></i></div>
+
+ </div>
+
+ <div class="workflow-step reveal" style="--delay: 0.35s">
+
+ <div class="step-number">6</div>
+
+ <div class="step-content">
+
+ <h3>Profile Growth</h3>
+
+ <p>Credits, badges, subject mastery, and reputation rank update → leaderboard refreshes → AI-generated session summary sent to inbox</p>
+
+ </div>
+
+ <div class="step-icon"><i data-lucide="trending-up"></i></div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <!-- ===== USER ROLES (Section 2.4-2.5) ===== -->
+
+ <section class="section section-roles" id="roles">
+
+ <div class="container">
+
+ <div class="section-header reveal">
+
+ <span class="section-tag">User Roles</span>
+
+ <h2 class="section-title">Everyone Has a <span class="gradient-text">Role</span></h2>
+
+ <p class="section-desc">Five distinct roles — from students to platform admins. Roles are fluid; every student is both learner and tutor.</p>
+
+ </div>
+
+ <div class="roles-grid">
+
+ <div class="role-card reveal" style="--delay: 0.1s">
+
+ <div class="role-icon role-learner"><i data-lucide="book-open"></i></div>
+
+ <h3>Learner</h3>
+
+ <p>Posts help requests, spends credits, rates sessions</p>
+
+ <span class="role-badge">Default</span>
+
+ </div>
+
+ <div class="role-card reveal" style="--delay: 0.15s">
+
+ <div class="role-icon role-tutor"><i data-lucide="graduation-cap"></i></div>
+
+ <h3>Tutor</h3>
+
+ <p>Accepts requests, conducts sessions, earns credits, builds reputation</p>
+
+ <span class="role-badge">Default</span>
+
+ </div>
+
+ <div class="role-card role-card-highlight reveal" style="--delay: 0.2s">
+
+ <div class="role-icon role-hybrid"><i data-lucide="repeat-2"></i></div>
+
+ <h3>Hybrid</h3>
+
+ <p>Every student is both learner and tutor — roles are fluid and interchangeable</p>
+
+ <span class="role-badge role-badge-primary">Most Users</span>
+
+ </div>
+
+ <div class="role-card reveal" style="--delay: 0.25s">
+
+ <div class="role-icon role-admin"><i data-lucide="building-2"></i></div>
+
+ <h3>Institution Admin</h3>
+
+ <p>Manages campus community, views analytics, moderates content</p>
+
+ <span class="role-badge">Campus Level</span>
+
+ </div>
+
+ <div class="role-card reveal" style="--delay: 0.3s">
+
+ <div class="role-icon role-super"><i data-lucide="shield"></i></div>
+
+ <h3>Super Admin</h3>
+
+ <p>Full platform control, fraud management, global analytics</p>
+
+ <span class="role-badge">Platform Level</span>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <!-- ===== DASHBOARDS (Section 2.7-2.8) ===== -->
+
+ <section class="section section-dashboards" id="dashboards">
+
+ <div class="container">
+
+ <div class="section-header reveal">
+
+ <span class="section-tag">Dashboards</span>
+
+ <h2 class="section-title">Your Command <span class="gradient-text">Center</span></h2>
+
+ <p class="section-desc">Personalized dashboards for every role — student, tutor, and admin.</p>
+
+ </div>
+
+ <div class="dash-tagline-banner reveal" style="--delay:0.05s">
+
+ <div class="dash-tagline-left">
+
+ <h3 class="dash-tagline-text">Learn Tech , <span class="gradient-text">Grow together</span></h3>
+
+ <p>Explore the platform that turns knowledge into currency — see it in action.</p>
+
+ </div>
+
+ <div class="dash-tagline-right">
+
+ <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-demo-main" id="watchDemoBtn2"><i data-lucide="play-circle"></i> Watch Demo</a>
+
+ </div>
+
+ </div>
+
+ <div class="dashboard-tabs">
+
+ <button class="dash-tab active" data-tab="student"><i data-lucide="book-open"></i> Student</button>
+
+ <button class="dash-tab" data-tab="tutor"><i data-lucide="graduation-cap"></i> Tutor</button>
+
+ <button class="dash-tab" data-tab="admin"><i data-lucide="shield"></i> Admin</button>
+
+ </div>
+
+ <div class="dashboard-panels">
+
+ <div class="dash-panel active" id="panel-student">
+
+ <div class="dash-mock">
+
+ <div class="dash-mock-header">
+
+ <div class="mock-dots"><span></span><span></span><span></span></div>
+
+ <span>Student Dashboard — LearnLoop</span>
+
+ </div>
+
+ <div class="dash-mock-body">
+
+ <div class="mock-sidebar">
+
+ <div class="mock-nav-item active"><i data-lucide="home"></i> Dashboard</div>
+
+ <div class="mock-nav-item"><i data-lucide="wallet"></i> Wallet</div>
+
+ <div class="mock-nav-item"><i data-lucide="message-circle"></i> Requests</div>
+
+ <div class="mock-nav-item"><i data-lucide="trophy"></i> Badges</div>
+
+ <div class="mock-nav-item"><i data-lucide="bar-chart-3"></i> Progress</div>
+
+ </div>
+
+ <div class="mock-main">
+
+ <div class="mock-widget mock-wallet">
+
+ <span class="mock-widget-label">Credit Balance</span>
+
+ <span class="mock-widget-value" id="studentWalletValue">142 <small>KC</small></span>
+
+ <div class="mock-widget-trend">+18 this week</div>
+
+ </div>
+
+ <div class="mock-widget mock-actions" style="grid-column: span 2;">
+ <span class="mock-widget-label">Earn Credits</span>
+ <div class="action-buttons-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.5rem; margin-top: 1rem;">
+ <button class="btn btn-outline btn-sm earn-kc-btn" data-kc="5" data-action="complete-profile"><i data-lucide="user-check"></i> Complete Profile (+5)</button>
+ <button class="btn btn-outline btn-sm earn-kc-btn" data-kc="1" data-action="daily-checkin"><i data-lucide="calendar-check"></i> Daily Check-in (+1)</button>
+ <button class="btn btn-outline btn-sm earn-kc-btn" data-kc="7" data-action="attend-lecture"><i data-lucide="monitor-play"></i> Attend Lecture (+7)</button>
+ </div>
+ </div>
+
+ <div class="mock-widget mock-requests">
+
+ <span class="mock-widget-label">Active Requests</span>
+
+ <div class="mock-req-list">
+
+ <div class="mock-req"><span class="mock-req-dot pending"></span> Calculus II — Pending</div>
+
+ <div class="mock-req"><span class="mock-req-dot matched"></span> Data Structures — Matched</div>
+
+ <div class="mock-req"><span class="mock-req-dot live"></span> Linear Algebra — In Session</div>
+
+ </div>
+
+ </div>
+
+ <div class="mock-widget mock-radar">
+
+ <span class="mock-widget-label">Expertise Radar</span>
+
+ <div class="mock-radar-chart">
+
+ <svg viewBox="0 0 200 200">
+
+ <polygon points="100,20 170,60 170,140 100,180 30,140 30,60" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+ <polygon points="100,50 150,75 150,125 100,150 50,125 50,75" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+ <polygon points="100,65 130,90 145,130 90,155 45,110 65,70" fill="rgba(230,126,34,0.2)" stroke="#E67E22" stroke-width="2"/>
+
+ </svg>
+
+ </div>
+
+ </div>
+
+ <div class="mock-widget mock-badges">
+
+ <span class="mock-widget-label">Recent Badges</span>
+
+ <div class="mock-badge-list" id="studentBadgeList">
+
+ <span class="mock-badge" title="Learner: Unlocks Subject Mastery tracking">📖 Lvl 2: Learner</span>
+
+ <span class="mock-badge" title="Starter: +20 Welcome Credits">🔰 Lvl 1: Starter</span>
+
+ </div>
+
+ </div>
+
+ <div class="mock-widget mock-leaderboard">
+
+ <span class="mock-widget-label">Campus Rank</span>
+
+ <span class="mock-widget-value">#12</span>
+
+ <div class="mock-widget-trend">↑ 3 spots</div>
+
+ </div>
+
+ <div class="mock-widget mock-ai-rec">
+
+ <span class="mock-widget-label">AI Recommended</span>
+
+ <div class="mock-rec-topics">
+
+ <span>Probability</span><span>OS Concepts</span><span>Graph Theory</span>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="dash-panel" id="panel-tutor">
+
+ <div class="dash-mock">
+
+ <div class="dash-mock-header">
+
+ <div class="mock-dots"><span></span><span></span><span></span></div>
+
+ <span>Tutor Dashboard — LearnLoop</span>
+
+ </div>
+
+ <div class="dash-mock-body">
+
+ <div class="mock-sidebar">
+
+ <div class="mock-nav-item active"><i data-lucide="home"></i> Dashboard</div>
+
+ <div class="mock-nav-item"><i data-lucide="inbox"></i> Requests Feed</div>
+
+ <div class="mock-nav-item"><i data-lucide="wallet"></i> Earnings</div>
+
+ <div class="mock-nav-item"><i data-lucide="flame"></i> Streaks</div>
+
+ <div class="mock-nav-item"><i data-lucide="star"></i> Reviews</div>
+
+ </div>
+
+ <div class="mock-main">
+
+ <div class="mock-widget mock-wallet">
+
+ <span class="mock-widget-label">Credits Earned</span>
+
+ <span class="mock-widget-value" id="tutorWalletValue">384 <small>KC</small></span>
+
+ <div class="mock-widget-trend">+52 this week</div>
+
+ </div>
+
+ <div class="mock-widget mock-actions" style="grid-column: span 2;">
+ <span class="mock-widget-label">Earn Credits</span>
+ <div class="action-buttons-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.5rem; margin-top: 1rem;">
+ <button class="btn btn-outline btn-sm earn-kc-btn" data-kc="10" data-action="upload-video"><i data-lucide="video"></i> Upload Video (+10)</button>
+ <button class="btn btn-outline btn-sm earn-kc-btn" data-kc="2" data-action="upload-resource"><i data-lucide="image"></i> Upload Resource (+2)</button>
+ <button class="btn btn-outline btn-sm earn-kc-btn" data-kc="5" data-action="complete-profile"><i data-lucide="user-check"></i> Complete Profile (+5)</button>
+ </div>
+ </div>
+
+ <div class="mock-widget mock-requests">
+
+ <span class="mock-widget-label">Available Requests</span>
+
+ <div class="mock-req-list">
+
+ <div class="mock-req"><span class="mock-req-dot pending"></span> Physics — 5 KC — Urgent</div>
+
+ <div class="mock-req"><span class="mock-req-dot pending"></span> Chemistry — 3 KC — Scheduled</div>
+
+ <div class="mock-req"><span class="mock-req-dot matched"></span> Math — 4 KC — Immediate</div>
+
+ </div>
+
+ </div>
+
+ <div class="mock-widget mock-streak">
+
+ <span class="mock-widget-label">Teaching Streak</span>
+
+ <span class="mock-widget-value">🔥 12 Days</span>
+
+ <div class="mock-widget-trend">Next milestone: 15 days</div>
+
+ </div>
+
+ <div class="mock-widget mock-reviews">
+
+ <span class="mock-widget-label">Reputation Score</span>
+
+ <span class="mock-widget-value">4.8⭐ ⭐⭐</span>
+
+ <div class="mock-widget-trend">23 reviews</div>
+
+ </div>
+
+ <div class="mock-widget mock-badges">
+
+ <span class="mock-widget-label">Mastery Badges</span>
+
+ <div class="mock-badge-list" id="tutorBadgeList">
+
+ <span class="mock-badge" title="Contributor: Unlocks Streak Freeze cards">🤝 Lvl 3: Contributor</span>
+
+ <span class="mock-badge" title="Learner: Unlocks Subject Mastery tracking">📖 Lvl 2: Learner</span>
+
+ <span class="mock-badge" title="Starter: +20 Welcome Credits">🔰 Lvl 1: Starter</span>
+
+ </div>
+
+ </div>
+
+ <div class="mock-widget mock-schedule">
+
+ <span class="mock-widget-label">Upcoming</span>
+
+ <div class="mock-req-list">
+
+ <div class="mock-req"><span class="mock-req-dot live"></span> Thermodynamics — Today 4PM</div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ <div class="dash-panel" id="panel-admin">
+
+ <div class="dash-mock">
+
+ <div class="dash-mock-header">
+
+ <div class="mock-dots"><span></span><span></span><span></span></div>
+
+ <span>Admin Panel — LearnLoop</span>
+
+ </div>
+
+ <div class="dash-mock-body">
+
+ <div class="mock-sidebar">
+
+ <div class="mock-nav-item active"><i data-lucide="home"></i> Overview</div>
+
+ <div class="mock-nav-item"><i data-lucide="users"></i> Users</div>
+
+ <div class="mock-nav-item"><i data-lucide="monitor"></i> Sessions</div>
+
+ <div class="mock-nav-item"><i data-lucide="alert-triangle"></i> Moderation</div>
+
+ <div class="mock-nav-item"><i data-lucide="megaphone"></i> Announce</div>
+
+ </div>
+
+ <div class="mock-main">
+
+ <div class="mock-widget mock-wallet">
+
+ <span class="mock-widget-label">Active Users</span>
+
+ <span class="mock-widget-value">1,247</span>
+
+ <div class="mock-widget-trend">+89 this month</div>
+
+ </div>
+
+ <div class="mock-widget mock-leaderboard">
+
+ <span class="mock-widget-label">Sessions Today</span>
+
+ <span class="mock-widget-value">34</span>
+
+ <div class="mock-widget-trend">↑ 12% vs avg</div>
+
+ </div>
+
+ <div class="mock-widget mock-requests">
+
+ <span class="mock-widget-label">Moderation Queue</span>
+
+ <div class="mock-req-list">
+
+ <div class="mock-req"><span class="mock-req-dot pending"></span> 3 flagged sessions</div>
+
+ <div class="mock-req"><span class="mock-req-dot pending"></span> 1 credit audit alert</div>
+
+ <div class="mock-req"><span class="mock-req-dot matched"></span> 2 reported content</div>
+
+ </div>
+
+ </div>
+
+ <div class="mock-widget mock-badges">
+
+ <span class="mock-widget-label">Top Tutors</span>
+
+ <div class="mock-badge-list">
+
+ <span class="mock-badge">🎓 Arjun S. — 4.9⭐</span>
+
+ <span class="mock-badge">🎓 Priya M. — 4.8⭐</span>
+
+ </div>
+
+ </div>
+
+ <div class="mock-widget mock-streak">
+
+ <span class="mock-widget-label">Coverage Gaps</span>
+
+ <div class="mock-widget-trend">Organic Chem, Discrete Math</div>
+
+ </div>
+
+ <div class="mock-widget mock-ai-rec">
+
+ <span class="mock-widget-label">Fraud Alerts</span>
+
+ <div class="mock-rec-topics">
+
+ <span>0 active</span><span>2 resolved</span>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <!-- ===== CTA ===== -->
+
+ <section class="section section-cta" id="cta">
+
+ <div class="container">
+
+ <div class="cta-card reveal">
+
+ <h2>Ready to Transform How You <span class="gradient-text">Learn</span>?</h2>
+
+ <p>Join LearnLoop and be part of the knowledge revolution. Teach what you know, learn what you don't.</p>
+
+ <div class="cta-buttons">
+
+ <button class="btn btn-primary btn-lg" id="ctaGetStarted">Get Started Free</button>
+
+ <button class="btn btn-outline btn-lg" id="ctaLearnMore">Learn More</button>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <!-- ===== FOOTER ===== -->
+
+ <footer class="footer">
+
+ <div class="container">
+
+ <div class="footer-top">
+
+ <div class="footer-brand">
+
+ <a href="#" class="nav-logo">
+
+ <div class="logo-icon">
+
+ <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="url(#g2)" stroke-width="2.5"/><path d="M10 20 L16 10 L22 20" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="22" r="2" fill="url(#g2)"/><defs><linearGradient id="g2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#E67E22"/><stop offset="1" stop-color="#F39C12"/></linearGradient></defs></svg>
+
+ </div>
+
+ <span class="logo-text">LearnLoop</span>
+
+ </a>
+
+ <p>Where Knowledge Becomes Currency.<br/>A Peer-to-Peer Knowledge Exchange Ecosystem.</p>
+
+ </div>
+
+ <div class="footer-links">
+
+ <div class="footer-col">
+
+ <h4>Platform</h4>
+
+ 
+
+ <a href="#ai">AI Engine</a>
+
+ <a href="#innovation">Innovation</a>
+
+ </div>
+
+ <div class="footer-col">
+
+ <h4>Company</h4>
+
+ <a href="#">About</a>
+
+ <a href="#">Careers</a>
+
+
+
+ </div>
+
+ <div class="footer-col">
+
+  <h4>Support</h4>
+
+  <a href="help.html">Help Center</a>
+
+  <a href="privacy.html">Privacy Policy</a>
+
+  <a href="terms.html">Terms of Service</a>
+
+  </div>
+
+ </div>
+
+ </div>
+
+ <div class="footer-bottom">
+
+ <p>&copy; 2026 LearnLoop AI. Hackathon Master Blueprint.</p>
+
+ <p>Confidential — Hackathon Use Only</p>
+
+ </div>
+
+ </div>
+
+ </footer>
+
+ <!-- ===== MODAL ===== -->
+
+ <div class="modal-overlay" id="modalOverlay">
+
+ <div class="modal" id="authModal">
+
+ <button class="modal-close" id="modalClose"><i data-lucide="x"></i></button>
+
+ <!-- REGISTER VIEW -->
+ <div id="registerView">
+   <h2>Join <span class="gradient-text">LearnLoop</span></h2>
+   <p>Start your knowledge exchange journey today.</p>
+   <form class="modal-form" id="signupForm">
+     <input type="text" placeholder="Full Name" required id="signupName" />
+     <input type="email" placeholder="Institution Email" required id="signupEmail" />
+     <select id="signupRole" required>
+       <option value="" disabled selected>I want to...</option>
+       <option value="learn">Learn (Ask Doubts)</option>
+       <option value="teach">Teach (Help Others)</option>
+       <option value="both">Both</option>
+     </select>
+     <div style="font-size: 0.8rem; color: #a0aec0; margin-bottom: 1rem; text-align: left;">
+       * Institution verification will be sent to your email.
+     </div>
+     <button type="submit" class="btn btn-primary btn-lg btn-full">Create Account</button>
+   </form>
+   <p class="modal-footer-text">Already have an account? <a href="#" id="toggleToLogin">Log in</a></p>
+ </div>
+
+ <!-- LOGIN VIEW -->
+ <div id="loginView" style="display: none;">
+   <h2>Welcome <span class="gradient-text">Back</span></h2>
+   <p>Continue your knowledge exchange journey.</p>
+   <form class="modal-form" id="loginForm">
+     <input type="email" placeholder="Institution Email" required id="loginEmail" />
+     <input type="password" placeholder="Password" required id="loginPassword" />
+     <div style="text-align: right; margin-top: -0.5rem; margin-bottom: 1rem;">
+       <a href="#" style="font-size: 0.85rem; color: #E67E22; text-decoration: none;">Forgot password?</a>
+     </div>
+     <button type="submit" class="btn btn-primary btn-lg btn-full">Log In</button>
+   </form>
+   <p class="modal-footer-text">New to LearnLoop? <a href="#" id="toggleToRegister">Create account</a></p>
+ </div>
+
+ </div>
+
+ </div>
+
+  <input type="file" id="videoUploadInput" accept="video/*" style="display:none;">
+  <input type="file" id="resourceUploadInput" accept="image/*,.pdf" style="display:none;">
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
